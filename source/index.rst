@@ -7,9 +7,17 @@ LinuxMint开发环境搭建指南
 =====================================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: 安装LinuxMint
 
-获取安装介质
------------------------------------------------------
-在正式开始搭建开发环境之前，我们需要拿到系统的安装镜像。
+   choose
+   verify
+   burn
+   boot
+   efi
+   partitioning
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: 编译系统概述
