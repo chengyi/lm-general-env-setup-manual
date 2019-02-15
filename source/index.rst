@@ -14,8 +14,9 @@ LinuxMint开发环境搭建指南
    verify
    burn
    boot
-   efi
    partitioning
+   install
+   efi
 
 
 .. toctree::
