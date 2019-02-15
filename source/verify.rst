@@ -1,68 +1,68 @@
-Verify your ISO image
+验证你的ISO镜像
 =====================
 
-It is important to verify the integrity and authenticity of your ISO image.
+验证ISO镜像 的完整性和可靠性是很重要的。
 
-The integrity check confirms that your ISO image was properly downloaded and that your local file is an exact copy of the file present on the download servers. An error during the download could result in a corrupted file and trigger random issues during the installation.
+完整性检查确认你的ISO映像是否被正确下载，并且你的本地文件是否和下载服务器上存在的文件完全一致。下载过程中的错误可能导致文件损坏，并在安装过程中引发随机问题。
 
-The authenticity check confirms that the ISO image you downloaded was signed by Linux Mint, and thus that it isn't a modified or malicious copy made by somebody else.
+可靠性检验确认你下载的ISO镜像是否由Linux Mint签署的，因此它并不是被别人修改或恶意的拷贝。
 
-Download the SHA256 sums provided by Linux Mint
+下载由Linux Mint提供的SHA256值
 -----------------------------------------------
 
-All `download mirrors <https://www.linuxmint.com/mirrors.php>`_ provide the ISO images, a ``sha256sum.txt`` file and a ``sha256sum.txt.gpg`` file. You should be able to find these files in the same place you downloaded the ISO image from.
+所有 `download mirrors <https://www.linuxmint.com/mirrors.php>`_ 都提供ISO镜像, 一个 ``sha256sum.txt`` 文件和一个 ``sha256sum.txt.gpg`` 文件。你应该能够在你下载ISO镜像相同的位置找到这些文件。
 
-If you can't find them, browse the `Heanet download mirror <https://ftp.heanet.ie/mirrors/linuxmint.com/stable/>`_ and click the version of the Linux Mint release you downloaded.
+如果你不能找到他们，请浏览 `Heanet download mirror <https://ftp.heanet.ie/mirrors/linuxmint.com/stable/>`_ 并且检查你下载的Linux Mint版本。
 
-Download both ``sha256sum.txt`` and ``sha256sum.txt.gpg``.
+下载 ``sha256sum.txt`` 和 ``sha256sum.txt.gpg``.
 
-Integrity check
+完整性检查
 ---------------
 
-To check the integrity of your local ISO file, generate its SHA256 sum and compare it with the sum present in ``sha256sum.txt``.
+为了检验你本地ISO文件的完整性，生成它的SHA256值并且与 ``sha256sum.txt`` 里面的值进行比较。
 
 .. code-block:: console
 
     sha256sum -b yourfile.iso
 
 .. hint::
-    If you are using Windows you can get the sha256sum (and gpg) command utility by installing `Cygwin <http://www.cygwin.com/>`_.
+   如果你正在使用Windows系统，你可以通过安装 `Cygwin <http://www.cygwin.com/>`_ 得到sha256值（和gpg）命令工具。
 
-If the sums match, your ISO image was successfully downloaded. If they don't, download it again.
+如果sum匹配，你的ISO映像被成功下载。如果没有，请再次下载。
 
 `````
 
-Authenticity check
+校验和真实性检查
 ------------------
 
-To verify the authenticity of ``sha256sum.txt``, check the signature of ``sha256sum.txt.gpg`` by following the steps below.
+采取下面的步骤来核实 ``sha256sum.txt`` 的真实性, 以及检查 ``sha256sum.txt.gpg`` 的签名。
 
-Import the Linux Mint signing key:
+导入的Linux Mint的签名密钥：
 ``````````````````````````````````
 .. code-block:: console
 
    gpg --keyserver keyserver.ubuntu.com --recv-key "27DE B156 44C6 B3CF 3BD7  D291 300F 846B A25B AE09"
 
 .. note::
-    If gpg complains about the key ID, try the following commands instead:
+    如果gpg提示ID非法，请尝试下面的命令：
 
     .. code-block:: console
 
         gpg --keyserver keyserver.ubuntu.com --recv-key A25BAE09
         gpg --list-key --with-fingerprint A25BAE09
 
-    Check the output of the last command, to make sure the fingerprint is ``27DE B156 44C6 B3CF 3BD7 D291 300F 846B A25B AE09``.
+    检查最后命令的输出，确保指纹是 ``27DE B156 44C6 B3CF 3BD7 D291 300F 846B A25B AE09``.
 
-Verify the authenticity of sha256sum.txt:
+验证sha256sum.txt的真实性：
 `````````````````````````````````````````
 .. code-block:: console
 
     gpg --verify sha256sum.txt.gpg sha256sum.txt
 
-The output of the last command should tell you that the file signature is ``good`` and that it was signed with the ``A25BAE09`` key.
+最后指令的输出应该告诉你文件签名是 ``good`` 的而且它以 ``A25BAE09`` 密钥签署。
 
 .. note::
-    GPG might warn you that the Linux Mint signature is not trusted by your computer. This is expected and perfectly normal.
+    GPG也许会警告你Linux Mint签名并不会你的电脑所信任。这是意料之中的，非常正常。
 
 .. hint::
-    For more information on ISO verification, or to verify BETA, LMDE or old releases, read `How to Verify ISO images <https://linuxmint.com/verify.php>`_.
+   寻找有关ISO校验的更多信息，或者BETA、LMDE以及其他发行版校验的信息，请阅读 `How to Verify ISO images <https://linuxmint.com/verify.php>`_ 。

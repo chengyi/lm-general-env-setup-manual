@@ -1,21 +1,18 @@
-Boot Linux Mint
+启动Linux
 ===============
 
-Now that you have Linux Mint on a USB stick (or DVD) boot the computer from it.
+现在您在U盘上有了一个可用于启动计算机的 Linux Mint 系统。
 
-1. Insert your USB stick (or DVD) into the computer.
+1. 将U盘插入您的计算机。
 
-2. Restart the computer.
+2. 重启计算机。
 
-3. Before your computer boots your current operating system (Windows, Mac, Linux) you should see your `BIOS <https://en.wikipedia.org/wiki/BIOS>`_ loading screen. Check the screen or your computer's documentation to know which key to press and instruct your computer to boot on USB (or DVD).
+3. 在您的计算机启动您当前的操作系统（Windows，Mac，Linux）之前，你会看到您的 `BIOS <https://en.wikipedia.org/wiki/BIOS>`_ 加载画面。请查看屏幕或计算机的说明书，以确认按哪个键来从USB启动。
 
 .. note::
-	Most BIOS have a special key you can press to select the boot device and all of them have a special key to enter the BIOS configuration screen (from which you can define the boot order). Depending on the BIOS, these special keys can be :kbd:`Escape`, :kbd:`F1`, :kbd:`F2`, :kbd:`F8`, :kbd:`F10`, :kbd:`F11`, :kbd:`F12`, or :kbd:`Delete`. That information is usually briefly written on the screen during the boot sequence.
+	大部分BIOS有一个特殊的键，您可以按该键以选择启动设备。所有的BIOS都有一个特殊的键来进入BIOS设置屏幕，你可以在该设置屏幕中调整启动顺序。对不同的BIOS，这个特殊键可能是 Escape， F1， F2， F8， F10， F11， F12，或者是 Delete。这些信息通常在启动时短暂地出现在屏幕上。
 
-.. hint::
-	On Macs, keep your finger pressed on the :kbd:`Alt` or :kbd:`Option` key after hearing the boot sound.
-
-4. The Linux Mint ISO can be booted both in EFI or BIOS mode. In EFI mode it shows a grub menu. In BIOS mode it shows an isolinux menu.
+4. Linux Mint ISO 可以在 EFI 或 BIOS 模式中启动。在 EFI 模式中它会显示一个 grub 菜单。在 BIOS 模式中它会显示一个 isolinux 菜单。
 
 .. figure:: images/isolinux.png
     :width: 500px
@@ -29,4 +26,4 @@ Now that you have Linux Mint on a USB stick (or DVD) boot the computer from it.
 
     The grub menu in EFI mode
 
-5. From one of these menu, press :kbd:`Enter` to start Linux Mint from your USB stick (or DVD).
+5. 在这两个菜单中, 按 :kbd:`Enter` 以从您的U盘启动Linux。
