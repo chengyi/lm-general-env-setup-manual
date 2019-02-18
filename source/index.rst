@@ -16,7 +16,6 @@ LinuxMint开发环境搭建指南
    boot
    partitioning
    install
-   efi
 
 
 .. toctree::
