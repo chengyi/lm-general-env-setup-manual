@@ -21,3 +21,36 @@ LinuxMint开发环境搭建指南
 .. toctree::
    :maxdepth: 1
    :caption: 编译系统概述
+
+   cmake
+   androidmake
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Shell设定
+
+   zshell
+
+.. toctree::
+   :maxdepth: 1
+   :caption: VIM的基本使用
+
+   vim
+
+.. toctree::
+   :maxdepth: 1
+   :caption: 代码阅读工具指略
+
+   readingcode
+
+.. toctree::
+   :maxdepth: 1
+   :caption: CodeLite的安装与使用
+
+   codelite
+
+.. toctree::
+   :maxdepth: 1
+   :caption: IntelliJ的安装与使用
+
+   intellij
