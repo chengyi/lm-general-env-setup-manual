@@ -33,7 +33,7 @@ LinuxMint开发环境搭建指南
 
 .. toctree::
    :maxdepth: 1
-   :caption: VIM的基本使用
+   :caption: VIM
 
    vim
 
@@ -45,12 +45,13 @@ LinuxMint开发环境搭建指南
 
 .. toctree::
    :maxdepth: 1
-   :caption: CodeLite的安装与使用
+   :caption: IDE
 
    codelite
+   intellij
 
 .. toctree::
    :maxdepth: 1
-   :caption: IntelliJ的安装与使用
+   :caption: 后记
 
-   intellij
+   thanks
