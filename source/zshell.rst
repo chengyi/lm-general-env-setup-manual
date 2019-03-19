@@ -8,7 +8,7 @@ ZShell是一个强大的shell，它的扩展性特别好，有很多现成的配
 --------------------
 .. code-block:: shell
 
-   sudo apt-get install zshell
+   sudo apt-get install zsh
 
 安装zimfw
 --------------------
