@@ -54,4 +54,5 @@ LinuxMint开发环境搭建指南
    :maxdepth: 1
    :caption: 后记
 
+   history
    thanks
